@@ -1,7 +1,7 @@
 
 To launch a pre-configured jupyter notebook version of this pipeline, click on "Launch Binder"
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tylerslonecki/bi-img-cranberry-external/HEAD?labpath=Internal_Scans.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tylerslonecki/bi-img-cranberry-external/HEAD?labpath=binder%2FInternal_Scans.ipynb)
 
 
 # Docker Environment Setup
