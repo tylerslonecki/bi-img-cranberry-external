@@ -4,6 +4,8 @@ To launch a pre-configured jupyter notebook version of this pipeline, click on "
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tylerslonecki/bi-img-cranberry-external/HEAD?labpath=binder%2FInternal_Scans.ipynb)
 
 
+
+
 # Docker Environment Setup
 
 ## Step 1: Install Docker
