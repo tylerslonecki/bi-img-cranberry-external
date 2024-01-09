@@ -1,7 +1,22 @@
 FROM mambaorg/micromamba:1-mantic
 LABEL authors="tjs334"
 
-WORKDIR /home/mambauser/
+WORKDIR /home/ubuntu/
+
+## Change the UID of the existing user to 1000
+#RUN usermod -u 1000 $MAMBA_USER
+
+ARG NB_USER=ubuntu
+ARG NB_UID=1000
+ENV USER ${NB_USER}
+ENV NB_UID ${NB_UID}
+ENV HOME /home/${NB_USER}
+
+# Make sure the contents of our repo are in ${HOME}
+COPY . ${HOME}
+USER root
+RUN chown -R ${NB_UID} ${HOME}
+USER ${NB_USER}
 
 COPY --chown=ubuntu:ubuntu environment.yml /tmp/environment.yml
 
@@ -25,21 +40,6 @@ RUN apt-get update && \
 USER ubuntu
 ##############################################
 
-
-## Change the UID of the existing user to 1000
-#RUN usermod -u 1000 $MAMBA_USER
-
-ARG NB_USER=ubuntu
-ARG NB_UID=1000
-ENV USER ${NB_USER}
-ENV NB_UID ${NB_UID}
-ENV HOME /home/${NB_USER}
-
-# Make sure the contents of our repo are in ${HOME}
-COPY . ${HOME}
-USER root
-RUN chown -R ${NB_UID} ${HOME}
-USER ${NB_USER}
 
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 ENV ENV_NAME=base
