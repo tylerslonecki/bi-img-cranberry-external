@@ -4,7 +4,6 @@ LABEL authors="tjs334"
 WORKDIR /home/ubuntu/
 
 ## Change the UID of the existing user to 1000
-#RUN usermod -u 1000 $MAMBA_USER
 
 ARG NB_USER=ubuntu
 ARG NB_UID=1000
