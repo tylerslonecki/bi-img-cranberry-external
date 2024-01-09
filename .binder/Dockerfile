@@ -1,7 +1,7 @@
 FROM mambaorg/micromamba:1-mantic
 LABEL authors="tjs334"
 
-WORKDIR /home/ubuntu/
+WORKDIR /home/mambauser/
 
 COPY --chown=ubuntu:ubuntu environment.yml /tmp/environment.yml
 
