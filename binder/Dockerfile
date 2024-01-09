@@ -3,7 +3,7 @@ LABEL authors="tjs334"
 
 WORKDIR /home/ubuntu/
 
-#COPY --chown=ubuntu:ubuntu environment.yml /tmp/environment.yml
+COPY --chown=ubuntu:ubuntu environment.yml /tmp/environment.yml
 
 RUN micromamba install -y -n base -f environment.yml && \
     micromamba install -y -n base jupyter && \
