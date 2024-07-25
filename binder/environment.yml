@@ -1,11 +1,11 @@
-name: base
-channels:
-  - conda-forge
-dependencies:
-  - python=3.8.17
-  # - opencv-python-headless
-  # - pytorch
-  # - scikit-image
+# name: base
+# channels:
+#   - conda-forge
+# dependencies:
+#   - python=3.8.17
+#   # - opencv-python-headless
+#   # - pytorch
+#   # - scikit-image
   # - torchvision
   # - tqdm=4.66.1
   # - ultralytics
