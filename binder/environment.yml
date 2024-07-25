@@ -2,7 +2,7 @@ name: base
 channels:
   - conda-forge
 dependencies:
-  - opencv=4.8.0
+  - opencv-python-headless
   - pytorch
   - scikit-image
   - torchvision
