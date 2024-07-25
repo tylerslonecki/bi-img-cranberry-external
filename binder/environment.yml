@@ -2,14 +2,15 @@ name: base
 channels:
   - conda-forge
 dependencies:
-  - opencv-python-headless
-  - pytorch
-  - scikit-image
-  - torchvision
-  - tqdm=4.66.1
-  - ultralytics
-  - pip:
-      - colorcorrectionML
+  - python=3.8.17
+  # - opencv-python-headless
+  # - pytorch
+  # - scikit-image
+  # - torchvision
+  # - tqdm=4.66.1
+  # - ultralytics
+  # - pip:
+  #     - colorcorrectionML
 
 
 
